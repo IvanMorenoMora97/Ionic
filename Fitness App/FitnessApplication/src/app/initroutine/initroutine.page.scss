@@ -1,0 +1,29 @@
+#textos{
+    text-align: center;
+}
+#nombreEjercicio{
+    font-size: 16px;
+}
+#video{
+    margin:auto;
+    text-align: center;
+}
+#progress-circle {
+    margin-top: 50px;
+    transform: rotate(90deg);
+}
+.timer-text {
+    transform: rotate(-90deg);
+    transform-origin:center;
+    font-size:36px;
+    text-anchor: middle;
+    font-weight: 600;
+    fill: #333;
+}
+.custom-ok alert.buttons{
+    text-align:center;
+}
+
+.img-box {
+    text-align: center;
+}

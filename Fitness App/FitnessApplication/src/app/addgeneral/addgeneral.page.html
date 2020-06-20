@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Crear una rutina general</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="generalForm">
+    <ion-input placeholder="Nombre" formControlName="name"></ion-input>
+    <div>
+      <ion-checkbox (click)="activar()"></ion-checkbox>
+      <ion-label>Activar rutina general</ion-label>
+    </div>
+    <div>
+      <ion-button (click)="editGeneral()">Crear</ion-button>
+    </div>
+  </form>
+</ion-content>

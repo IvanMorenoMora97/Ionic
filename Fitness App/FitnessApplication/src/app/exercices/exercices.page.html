@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Crea/Modifica tu rutina</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div id="bloqueNL" *ngFor="let r of rutinas">
+    <ion-card id="nombre" (click)="goToGeneral(r)">
+      <ion-card-content>{{r.nombre}}</ion-card-content>
+    </ion-card> 
+    <ion-card id="logo" (click)="removeExercise(r)"><ion-icon name="trash" id="img"></ion-icon>
+    </ion-card> 
+  </div>
+
+   <ion-fab vertical="bottom" horizontal="end" slot="fixed">  
+    <ion-fab-button size="small" (click)="(addGeneral())">  
+      <ion-icon name="add"></ion-icon>  
+    </ion-fab-button>  
+  </ion-fab>  
+
+</ion-content>
